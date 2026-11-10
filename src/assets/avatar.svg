@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141923" />
+      <stop offset="50%" stop-color="#1f242d" />
+      <stop offset="100%" stop-color="#0a101d" />
+    </linearGradient>
+    <linearGradient id="cyanAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00eeff" />
+      <stop offset="100%" stop-color="#0088cc" />
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d49a73" />
+      <stop offset="100%" stop-color="#b87b54" />
+    </linearGradient>
+    <linearGradient id="suitGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2a3240" />
+      <stop offset="100%" stop-color="#181d26" />
+    </linearGradient>
+    <filter id="glowEffect" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="500" height="500" fill="url(#bgGrad)" />
+
+  <!-- Subtle ambient geometric grid lines -->
+  <circle cx="250" cy="250" r="190" fill="none" stroke="#00eeff" stroke-width="1.5" stroke-dasharray="8 6" opacity="0.3" />
+  <circle cx="250" cy="250" r="140" fill="none" stroke="#00eeff" stroke-width="1" opacity="0.2" />
+
+  <!-- Silhouette / Developer Character -->
+  <!-- Shoulders & Coat -->
+  <path d="M120 480 C120 380, 170 340, 220 330 L220 300 L280 300 L280 330 C330 340, 380 380, 380 480 Z" fill="url(#suitGrad)" />
+  
+  <!-- Collar & Inner Shirt with Cyan Accent -->
+  <polygon points="250,345 220,300 280,300" fill="#11161f" stroke="#00eeff" stroke-width="2" />
+  <polygon points="250,380 238,335 262,335" fill="url(#cyanAccent)" />
+  <path d="M220 330 L250 480 L280 330" fill="none" stroke="#00eeff" stroke-width="1.5" opacity="0.7" />
+
+  <!-- Neck -->
+  <rect x="230" y="270" width="40" height="40" rx="4" fill="url(#skinGrad)" />
+  <path d="M230 290 Q250 305 270 290 Z" fill="#9e6642" opacity="0.4" />
+
+  <!-- Head / Face -->
+  <ellipse cx="250" cy="220" rx="60" ry="72" fill="url(#skinGrad)" />
+
+  <!-- Ears -->
+  <ellipse cx="188" cy="225" rx="10" ry="16" fill="#b87b54" />
+  <ellipse cx="312" cy="225" rx="10" ry="16" fill="#b87b54" />
+
+  <!-- Modern Haircut -->
+  <path d="M185 205 C185 140, 210 130, 250 130 C290 130, 315 140, 315 205 C310 170, 290 150, 250 150 C210 150, 190 170, 185 205 Z" fill="#1b1c22" />
+  <path d="M190 190 C220 145, 275 140, 310 175 C290 160, 245 155, 190 190 Z" fill="#2d303a" />
+
+  <!-- Glasses / Developer Aesthetic -->
+  <rect x="205" y="200" width="38" height="26" rx="6" fill="#141923" fill-opacity="0.4" stroke="#00eeff" stroke-width="3" />
+  <rect x="257" y="200" width="38" height="26" rx="6" fill="#141923" fill-opacity="0.4" stroke="#00eeff" stroke-width="3" />
+  <line x1="243" y1="212" x2="257" y2="212" stroke="#00eeff" stroke-width="3" />
+  <!-- Cyan lenses reflection -->
+  <line x1="210" y1="205" x2="230" y2="220" stroke="#ffffff" stroke-width="1.5" opacity="0.6" stroke-linecap="round" />
+  <line x1="262" y1="205" x2="282" y2="220" stroke="#ffffff" stroke-width="1.5" opacity="0.6" stroke-linecap="round" />
+
+  <!-- Eyes behind glasses -->
+  <ellipse cx="224" cy="213" rx="4" ry="4" fill="#11161f" />
+  <ellipse cx="276" cy="213" rx="4" ry="4" fill="#11161f" />
+  <circle cx="225" cy="212" r="1.5" fill="#ffffff" />
+  <circle cx="277" cy="212" r="1.5" fill="#ffffff" />
+
+  <!-- Eyebrows -->
+  <path d="M205 192 Q224 187 240 192" fill="none" stroke="#1b1c22" stroke-width="3.5" stroke-linecap="round" />
+  <path d="M260 192 Q276 187 295 192" fill="none" stroke="#1b1c22" stroke-width="3.5" stroke-linecap="round" />
+
+  <!-- Nose -->
+  <path d="M250 216 L247 236 L253 236" fill="none" stroke="#9e6642" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Smile / Confidence -->
+  <path d="M234 254 Q250 266 266 254" fill="none" stroke="#874e30" stroke-width="3" stroke-linecap="round" />
+
+  <!-- Neat Beard / Stubble -->
+  <path d="M228 266 Q250 282 272 266" fill="none" stroke="#1b1c22" stroke-width="2.5" stroke-dasharray="2 3" opacity="0.6" />
+
+  <!-- Futuristic Cyan Tech Accent Particles -->
+  <circle cx="130" cy="180" r="3" fill="#00eeff" opacity="0.8" />
+  <circle cx="370" cy="190" r="3" fill="#00eeff" opacity="0.8" />
+  <circle cx="150" cy="310" r="2" fill="#00eeff" opacity="0.6" />
+  <circle cx="350" cy="300" r="2.5" fill="#00eeff" opacity="0.7" />
+  <circle cx="250" cy="80" r="4" fill="#00eeff" opacity="0.9" />
+</svg>
+

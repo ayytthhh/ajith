@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Custom dark scrollbar with neon cyan accents */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #1f242d;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #323946;
+    border-radius: 5px;
+    border: 2px solid #1f242d;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #00eeff;
+    box-shadow: 0 0 10px #00eeff;
+  }
+
+  /* Focus visible accessibility styling */
+  :focus-visible {
+    outline: 2px solid #00eeff;
+    outline-offset: 3px;
+  }
+}
+
+@layer utilities {
+  /* Hexagon clip-path: flat top and bottom, pointy left and right */
+  .clip-hexagon {
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  }
+
+  /* Neon text glow */
+  .text-glow {
+    text-shadow: 0 0 12px rgba(0, 238, 255, 0.7), 0 0 25px rgba(0, 238, 255, 0.4);
+  }
+
+  /* Hexagon border drop-shadow glow */
+  .hex-glow {
+    filter: drop-shadow(0 0 12px rgba(0, 238, 255, 0.75)) drop-shadow(0 0 25px rgba(0, 238, 255, 0.35));
+  }
+  
+  .hex-glow-hover:hover {
+    filter: drop-shadow(0 0 18px rgba(0, 238, 255, 0.95)) drop-shadow(0 0 35px rgba(0, 238, 255, 0.5));
+  }
+}
+

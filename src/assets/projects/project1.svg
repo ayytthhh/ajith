@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p1bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141923" />
+      <stop offset="100%" stop-color="#242b38" />
+    </linearGradient>
+    <linearGradient id="p1cyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00eeff" />
+      <stop offset="100%" stop-color="#0099ff" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="380" fill="url(#p1bg)" />
+  <!-- UI Window Header -->
+  <rect x="30" y="25" width="540" height="330" rx="12" fill="#1f242d" stroke="#323946" stroke-width="2" />
+  <rect x="30" y="25" width="540" height="40" rx="12" fill="#282f3c" />
+  <circle cx="55" cy="45" r="5" fill="#ff5f56" />
+  <circle cx="75" cy="45" r="5" fill="#ffbd2e" />
+  <circle cx="95" cy="45" r="5" fill="#27c93f" />
+  <text x="300" y="50" font-family="'Poppins', sans-serif" font-size="12" fill="#8892b0" text-anchor="middle">campus-event-hub.thejus.edu</text>
+  
+  <!-- Content cards -->
+  <rect x="55" y="85" width="235" height="110" rx="8" fill="#141923" stroke="#00eeff" stroke-width="1.5" />
+  <text x="75" y="115" font-family="'Poppins', sans-serif" font-size="14" font-weight="600" fill="#00eeff">TechFest 2026</text>
+  <text x="75" y="140" font-family="'Poppins', sans-serif" font-size="11" fill="#ededed">Thejus College Hackathon</text>
+  <rect x="75" y="155" width="90" height="24" rx="12" fill="url(#p1cyan)" />
+  <text x="120" y="171" font-family="'Poppins', sans-serif" font-size="10" font-weight="600" fill="#1f242d" text-anchor="middle">Register Now</text>
+
+  <rect x="310" y="85" width="235" height="110" rx="8" fill="#141923" stroke="#323946" stroke-width="1.5" />
+  <text x="330" y="115" font-family="'Poppins', sans-serif" font-size="14" font-weight="600" fill="#ededed">AI Workshop</text>
+  <text x="330" y="140" font-family="'Poppins', sans-serif" font-size="11" fill="#8892b0">Hands-on PyTorch & ML</text>
+  <rect x="330" y="155" width="80" height="24" rx="12" fill="#323946" />
+  <text x="370" y="171" font-family="'Poppins', sans-serif" font-size="10" fill="#00eeff" text-anchor="middle">View Details</text>
+
+  <!-- Bottom graph / stats bar -->
+  <rect x="55" y="215" width="490" height="115" rx="8" fill="#181e28" />
+  <path d="M75 300 Q150 250 220 270 T350 230 T450 240 T520 225" fill="none" stroke="#00eeff" stroke-width="3" />
+  <circle cx="520" cy="225" r="4" fill="#00eeff" />
+  <text x="75" y="240" font-family="'Poppins', sans-serif" font-size="12" fill="#8892b0">Live Registrations Tracker</text>
+</svg>
+
