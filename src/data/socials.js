@@ -10,8 +10,7 @@ export const socials = [
   {
     id: 'github',
     name: 'GitHub',
-    // TODO: Replace with your GitHub URL
-    url: 'https://github.com',
+    url: 'https://github.com/ayytthhh',
     icon: FaGithub,
     ariaLabel: 'Visit Ajith P C on GitHub',
   },
