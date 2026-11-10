@@ -1,4 +1,5 @@
 import React from 'react';
+import profilePhoto from '../assets/profile.jpg';
 import defaultAvatar from '../assets/avatar.svg';
 
 /**
@@ -8,13 +9,12 @@ import defaultAvatar from '../assets/avatar.svg';
  * with a neon cyan glowing border and an ambient backlight,
  * directly matching the reference portfolio design.
  *
- * @param {string} src - Image path (TODO: Pass your personal photo here)
+ * @param {string} src - Image path (defaults to Ajith's photo)
  * @param {string} alt - Alt description for accessibility
  * @param {string} className - Optional container styling
  */
 const HexImage = ({
-  // TODO: Replace defaultAvatar with your own photo (e.g. import myPhoto from '../assets/my-photo.jpg')
-  src = defaultAvatar,
+  src = profilePhoto,
   alt = 'Ajith P C - Portrait',
   className = '',
 }) => {
@@ -35,16 +35,16 @@ const HexImage = ({
             <img
               src={src}
               alt={alt}
-              loading="lazy"
+              loading="eager"
               onError={(e) => {
                 // Fallback to default avatar if custom photo fails to load
                 e.currentTarget.src = defaultAvatar;
               }}
-              className="w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
+              className="w-full h-full object-cover object-[center_22%] scale-105 transition-transform duration-700 ease-out group-hover:scale-110"
             />
             {/* Subtle inner dark vignette at bottom */}
             <div
-              className="absolute inset-0 bg-gradient-to-t from-bg/60 via-transparent to-transparent pointer-events-none"
+              className="absolute inset-0 bg-gradient-to-t from-bg/40 via-transparent to-transparent pointer-events-none"
               aria-hidden="true"
             />
           </div>
